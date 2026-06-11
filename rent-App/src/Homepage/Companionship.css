@@ -1,0 +1,114 @@
+.companionship_section{
+    background-color: #5b3fe4;
+    border-radius: 18px;
+    padding: 50px 55px;
+}
+.companionship_text_col {
+    padding-right: 30px;
+}
+
+.companionship_heading {
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+.companionship_subtext {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+    max-width: 420px;
+    margin-bottom: 28px;
+}
+
+.companionship_search {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 380px;
+    padding: 4px 4px 4px 16px;
+}
+.companionship_input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 0.88rem;
+    color: #444;
+    background: transparent;
+    padding: 8px 0;
+}
+
+.companionship_input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 0.88rem;
+    color: #444;
+    background: transparent;
+    padding: 8px 0;
+}
+
+.companionship_input::placeholder {
+    color: #aaa;
+}
+.companionship_btn {
+    background-color: #f5a623;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 26px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.companionship_btn:hover {
+    background-color: #e09415;
+}
+/* ===== Right: Car Image ===== */
+.companionship_img_col {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.companionship_car_img {
+    width: 100%;
+    max-width: 360px;
+    object-fit: contain;
+}
+
+
+@media (max-width: 991px) {
+    .companionship_section {
+        padding: 40px 30px;
+    }
+
+    .companionship_heading {
+        font-size: 25px;
+    }
+
+    .companionship_img_col {
+        margin-top: 30px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .companionship_section {
+        padding: 32px 20px;
+    }
+
+    .companionship_heading {
+        font-size: 20px;
+    }
+
+    .companionship_search {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,110 @@
+.steps_section {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+.steps_image_col {
+    min-height: 500px;
+}
+
+.steps_car_img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 16px;
+    /* 💡 Subtly dims images in dark mode so they don't blindingly pop out */
+    transition: filter 0.3s ease;
+}
+
+[data-bs-theme="dark"] .steps_car_img {
+    filter: brightness(0.85);
+}
+
+.steps_content_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px !important;
+}
+
+.step_item {
+    margin-bottom: 36px;
+}
+
+.step_item:last-child {
+    margin-bottom: 0;
+}
+
+.step_header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 10px;
+}
+
+.step_badge {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    /* 💡 Keeps your branding color primary, but uses standard cross-theme variables if you prefer */
+    background-color: #5b3fe4;
+    color: #fff;
+    /* White looks clean here on both themes */
+    border-radius: 50%;
+    font-size: 0.88rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step_title {
+    font-size: 1rem;
+    font-weight: 700;
+    /* ❌ REPLACED: color: #111; */
+    color: var(--bs-heading-color);
+    /* 💡 Adapts title colors dynamically */
+    margin: 0;
+    line-height: 1.3;
+}
+
+.step_text {
+    font-size: 0.85rem;
+    /* ❌ REPLACED: color: #666; */
+    color: var(--bs-secondary-color);
+    /* 💡 Adapts paragraph description text cleanly */
+    line-height: 1.7;
+    margin: 0;
+    padding-left: 52px;
+    max-width: 440px;
+}
+
+/* --- Responsive Media Queries --- */
+@media (max-width: 991px) {
+    .steps_image_col {
+        min-height: 300px;
+    }
+
+    .steps_content_col {
+        padding: 40px 30px !important;
+        /* Added override protection */
+    }
+
+    .step_text {
+        padding-left: 52px;
+    }
+}
+
+@media (max-width: 575px) {
+    .steps_content_col {
+        padding: 30px 20px !important;
+    }
+
+    .step_text {
+        padding-left: 0;
+    }
+}
