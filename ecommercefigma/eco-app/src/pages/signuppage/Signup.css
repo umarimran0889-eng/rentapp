@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+.Form {
+    background-color: #f0EEed;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px 36px;
+    width: 100%;
+    max-width: 420px;
+    margin: 30px auto;
+  }
+  
+
+  .Form h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+
+  input {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    border: 1.5px solid whitesmoke;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    color: #1a1a1a;
+    outline: none;
+  }
+  
+  input:focus {
+    border-color: black;
+    box-shadow: 0 0 0 3px rgba(83, 74, 183, 0.12);
+    background-color: #fff;
+  }
+  
+  input::placeholder {
+    color: #aaa;
+    font-size: 13px;
+  }
+  
+
+  p {
+    font-size: 12px;
+    color: #e03c3c;
+    min-height: 18px;
+    margin-top: 4px;
+  }
+  
+  
+  button {
+    width: 100%;
+    padding: 11px;
+    margin-top: 8px;
+    background-color: #534AB7;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: black;
+}
+
+  
+ 
+  @media (max-width: 767px) {
+    body {
+      background-color: #ffffff;
+      align-items: flex-start;
+    }
+  
+    .Form {
+      max-width: 100%;
+      margin: 20px 16px;
+      padding: 28px 20px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    }
+  
+    .Form h1 {
+      font-size: 19px;
+    }
+  }
+  
+
+  @media (max-width: 575px) {
+    body {
+      background-color: #ffffff;
+    }
+  
+    .Form {
+      margin: auto;
+      padding: 30px 16px;
+      border-radius: 10px;
+    
+    }
+  
+    .Form h1 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  
+    input {
+      font-size: 16px;
+      padding: 10px 12px;
+    }
+  
+    button {
+      font-size: 15px;
+      padding: 12px;
+    }
+  }
